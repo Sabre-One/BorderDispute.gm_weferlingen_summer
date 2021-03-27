@@ -1,0 +1,1543 @@
+class CfgFactionClasses {
+    class gm_fc_ge {
+        displayName = "West Germany";
+        side = 1;
+        flag = "\gm\gm_core\data\flags\gm_flag_ge_co";
+        icon = "\gm\gm_core\data\ui\icon_ge_ca.paa";
+        priority = 2;
+    };
+    class gm_fc_gc {
+        displayName = "East Germany";
+        side = 0;
+        flag = "\gm\gm_core\data\flags\gm_flag_gc_co";
+        icon = "\gm\gm_core\data\ui\icon_gc_ca.paa";
+        priority = 2;
+    };
+};
+
+class CfgGroups {
+    class WEST {
+
+        class gm_fc_ge {
+            name = "West Germany";
+
+            class Infantry {
+                name = "Infantry";
+
+                class b_gmfcge_infantry_squad {
+                    name = "Squad";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_mg3_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_marksman_g3a3_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {-25,-35,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_grenadier_g3a3_80_ols";
+                    };
+                };
+
+                class b_gmfcge_infantry_anti_air {
+                    name = "Anti-Air";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antiair_g3a3_fim43_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antiair_g3a3_fim43_80_ols";
+                    };
+                };
+
+                class b_gmfcge_infantry_anti_tank {
+                    name = "Anti-Tank";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf84_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf84_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                };
+
+            };
+
+            class SpecOps {
+                name = "Special Forces";
+
+                class b_gmfcge_specops_special_force {
+                    name = "Special Force";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_squadleader_mp5sd3_p2a1_80_wdl";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_radioman_mp5a3_80_wdl";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_antitank_mp5a2_pzf84_80_wdl";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_antitank_assistant_mp5a2_pzf84_80_wdl";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_marksman_g3a3_80_wdl";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_rifleman_mp5a3_80_wdl";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_rifleman_g3a4_80_wdl";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_grenadier_hk69a1_80_wdl";
+                    };
+                };
+
+            };
+
+            class Motorized {
+                name = "Motorized Infantry";
+
+                class b_gmfcge_motorized_motorized_5t {
+                    name = "Motorized (5t)";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_kat1_451_cargo";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_mg3_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {30,-30,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit12 {
+                        position[] = {-30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                };
+
+                class b_gmfcge_motorized_motorized_aa {
+                    name = "Motorized AA";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_iltis_cargo";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antiair_g3a3_fim43_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antiair_g3a3_fim43_80_ols";
+                    };
+                };
+
+                class b_gmfcge_motorized_motorized_2t {
+                    name = "Motorized (2t)";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_u1300l_cargo";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_mg3_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_grenadier_hk69a1_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                };
+
+                class b_gmfcge_motorized_motorized_tpz {
+                    name = "Motorized (Tpz)";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_fuchsa0_reconnaissance";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf84_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf84_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_grenadier_g3a3_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {30,-30,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit12 {
+                        position[] = {-30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                };
+
+            };
+
+            class Motorized_MTP {
+                name = "Motorized Infantry (MTP)";
+
+            };
+
+            class Support {
+                name = "Support Infantry";
+
+            };
+
+            class Mechanized {
+                name = "Mechanized Infantry";
+
+                class b_gmfcge_mechanized_m113 {
+                    name = "m113";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_m113a1g_apc";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_mg3_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_grenadier_hk69a1_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {30,-30,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit12 {
+                        position[] = {-30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                };
+
+                class b_gmfcge_mechanized_spz_1a1a {
+                    name = "Spz 1A1A";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_marder1a1a";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_g3a3_pzf44_80_ols";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_antitank_assistant_g3a3_pzf44_80_ols";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_mg3_80_ols";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_machinegunner_assistant_g3a3_mg3_80_ols";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_radioman_g3a3_80_ols";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_grenadier_hk69a1_80_ols";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit10 {
+                        position[] = {-25,-25,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_rifleman_g3a3_80_ols";
+                    };
+                    class Unit11 {
+                        position[] = {30,-30,0};
+                        rank = "CORPORAL";
+                        side = 1;
+                        vehicle = "gm_ge_army_squadleader_g3a3_p2a1_80_ols";
+                    };
+                };
+
+            };
+
+            class Armored {
+                name = "Armor";
+
+                class b_gmfcge_armored_anti_air_squad {
+                    name = "Anti-Air Squad";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_gepard1a1";
+                    };
+                    class Unit1 {
+                        position[] = {7,-12,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_gepard1a1";
+                    };
+                };
+
+                class b_gmfcge_armored_spz_recon {
+                    name = "Spz Recon";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_luchsa1";
+                    };
+                    class Unit1 {
+                        position[] = {7,-14,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_luchsa1";
+                    };
+                };
+
+                class b_gmfcge_armored_kpz_a1_section {
+                    name = "KPZ A1 Section";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a1";
+                    };
+                    class Unit1 {
+                        position[] = {7,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a1";
+                    };
+                };
+
+                class b_gmfcge_armored_kpz_a1a1_section {
+                    name = "KPZ A1A1 Section";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a1a1";
+                    };
+                    class Unit1 {
+                        position[] = {7,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a1a2";
+                    };
+                };
+
+                class b_gmfcge_armored_kpz_a1a3_section {
+                    name = "KPZ A1A3 Section";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a3";
+                    };
+                    class Unit1 {
+                        position[] = {7,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a3a1";
+                    };
+                };
+
+                class b_gmfcge_armored_kpz_a5_section {
+                    name = "KPZ A5 Section";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a5";
+                    };
+                    class Unit1 {
+                        position[] = {7,-15,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_Leopard1a5";
+                    };
+                };
+
+            };
+
+            class Artillery {
+                name = "Artillery";
+
+            };
+
+            class Naval {
+                name = "Naval";
+
+            };
+
+            class Air {
+                name = "Air";
+
+                class b_gmfcge_air_pah_1wing {
+                    name = "PAH 1 Wing";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_bo105p_pah1";
+                    };
+                    class Unit1 {
+                        position[] = {15,-17,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_bo105p_pah1";
+                    };
+                };
+
+                class b_gmfcge_air_pah_a1a1_wing {
+                    name = "PAH A1A1 Wing";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_bo105p_pah1a1";
+                    };
+                    class Unit1 {
+                        position[] = {15,-17,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_bo105p_pah1a1";
+                    };
+                };
+
+                class b_gmfcge_air_vbh_spec_ops {
+                    name = "VBH Spec Ops";
+                    side = 1;
+                    faction = "gm_fc_ge";
+                    icon = "\A3\ui_f\data\map\markers\nato\b_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 1;
+                        vehicle = "gm_ge_army_bo105p1m_vbh";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_squadleader_mp5sd3_p2a1_80_wdl";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_antiair_mp5a3_fim43_80_wdl";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_marksman_g3a3_80_wdl";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 1;
+                        vehicle = "gm_ge_army_sf_rifleman_mp5a3_80_wdl";
+                    };
+                };
+
+            };
+
+
+        };
+
+    };
+    class EAST {
+
+        class gm_fc_gc {
+            name = "East Germany";
+
+            class Infantry {
+                name = "Infantry";
+
+                class o_gmfcgc_infantry_squad {
+                    name = "Squad";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_lmgrpk_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_assistant_mpiak74n_lmgrpk_80_str";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_paratrooper_mpiaks74n_80_str";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_marksman_svd_80_str";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                };
+
+                class o_gmfcgc_infantry_heavy_machine_gun_group {
+                    name = "Heavy Machine Gun Group";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_pk_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_assistant_mpiak74n_pk_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_pk_80_str";
+                    };
+                };
+
+                class o_gmfcgc_infantry_anti_air {
+                    name = "Anti Air";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antiair_mpiak74n_9k32m_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antiair_mpiak74n_9k32m_80_str";
+                    };
+                };
+
+                class o_gmfcgc_infantry_anti_tank {
+                    name = "Anti-Tank";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str";
+                    };
+                };
+
+            };
+
+            class SpecOps {
+                name = "Special Forces";
+
+                class o_gmfcgc_specops_special_force {
+                    name = "Special Force";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_recon.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_squadleader_mpikms72_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_radioman_mpikms72_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_marksman_svd_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_machinegunner_lmgrpk_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_antitank_mpikms72_rpg7_80_str";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_engineer_mpikms72_80_str";
+                    };
+                };
+
+            };
+
+            class Motorized {
+                name = "Motorized Infantry";
+
+                class o_gmfcgc_motorized_motorized_5t {
+                    name = "Motorized (5t)";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_pk_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_assistant_mpiak74n_pk_80_str";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_radioman_mpiak74n_80_str";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_marksman_svd_80_str";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                };
+
+                class o_gmfcgc_motorized_motorized_spw {
+                    name = "Motorized (SPW)";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_btr60pb";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_radioman_mpiak74n_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_pk_80_str";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_assistant_mpiak74n_pk_80_str";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_marksman_svd_80_str";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                };
+
+            };
+
+            class Motorized_MTP {
+                name = "Motorized Infantry (MTP)";
+
+            };
+
+            class Support {
+                name = "Support Infantry";
+
+            };
+
+            class Mechanized {
+                name = "Mechanized Infantry";
+
+                class o_gmfcgc_mechanized_mechanized_bmp_1 {
+                    name = "Mechanized BMP-1";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_bmp1sp2";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_squadleader_mpiak74n_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_antitank_assistant_mpiak74n_rpg7_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_pk_80_str";
+                    };
+                    class Unit5 {
+                        position[] = {15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_machinegunner_assistant_mpiak74n_pk_80_str";
+                    };
+                    class Unit6 {
+                        position[] = {-15,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_radioman_mpiak74n_80_str";
+                    };
+                    class Unit7 {
+                        position[] = {20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_marksman_svd_80_str";
+                    };
+                    class Unit8 {
+                        position[] = {-20,-20,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                    class Unit9 {
+                        position[] = {25,-25,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_rifleman_mpiak74n_80_str";
+                    };
+                };
+
+            };
+
+            class Armored {
+                name = "Armor";
+
+                class o_gmfcgc_armored_t55_section {
+                    name = "T-55 Section";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55";
+                    };
+                    class Unit1 {
+                        position[] = {8,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55";
+                    };
+                };
+
+                class o_gmfcgc_armored_t55a_section {
+                    name = "T-55A Section";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55a";
+                    };
+                    class Unit1 {
+                        position[] = {8,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55ak";
+                    };
+                };
+
+                class o_gmfcgc_armored_t55am_section {
+                    name = "T-55AM Section";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55am2";
+                    };
+                    class Unit1 {
+                        position[] = {8,-15,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_t55am2b";
+                    };
+                };
+
+                class o_gmfcgc_armored_aa_section {
+                    name = "AA Section";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_armor.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_army_zsu234v1";
+                    };
+                    class Unit1 {
+                        position[] = {7,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_zsu234v1";
+                    };
+                };
+
+            };
+
+            class Artillery {
+                name = "Artillery";
+
+            };
+
+            class Naval {
+                name = "Naval";
+
+            };
+
+            class Air {
+                name = "Air";
+
+                class o_gmfcgc_air_mi_2patrol {
+                    name = "MI-2 Patrol";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_airforce_mi2urn";
+                    };
+                    class Unit1 {
+                        position[] = {22,-30,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_airforce_mi2us";
+                    };
+                };
+
+                class o_gmfcgc_air_special_force_qrf {
+                    name = "Special Force QRF";
+                    side = 0;
+                    faction = "gm_fc_gc";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_air.paa";
+                    rarityGroup = 0.5;
+
+                    class Unit0 {
+                        position[] = {0,0,0};
+                        rank = "SERGEANT";
+                        side = 0;
+                        vehicle = "gm_gc_airforce_mi2t";
+                    };
+                    class Unit1 {
+                        position[] = {5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_squadleader_mpikms72_80_str";
+                    };
+                    class Unit2 {
+                        position[] = {-5,-5,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_antitank_mpikms72_rpg7_80_str";
+                    };
+                    class Unit3 {
+                        position[] = {10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_marksman_svd_80_str";
+                    };
+                    class Unit4 {
+                        position[] = {-10,-10,0};
+                        rank = "PRIVATE";
+                        side = 0;
+                        vehicle = "gm_gc_army_sf_machinegunner_lmgrpk_80_str";
+                    };
+                };
+
+            };
+
+
+        };
+
+    };
+};
+//////////////////////////////////////////////////////////////////////////////////
+// Config Automatically Generated by ALiVE ORBAT Creator
+// Generated with Arma 3 version 202.147359 on Stable branch
+// Generated with ALiVE version 1.13.2.2102061
+//////////////////////////////////////////////////////////////////////////////////
